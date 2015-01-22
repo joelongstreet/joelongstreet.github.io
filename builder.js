@@ -16,7 +16,7 @@ var build = function(){
 
 
 var serve = function(){
-  require('live-server').start(3000, process.cwd(), true);
+  require('live-server').start(3000);
 
   fs.watch('./src', function(e, filename){
     compileJadeFile('src/' + filename);
@@ -46,8 +46,11 @@ var compileJadeFile = function(filename){
     { encoding : 'utf8' }
   );
 
-  if(details.file){
-    fs.writeFile('./public/' + details.file + '.html',
+  if(details && details.file){
+    var prefix = '';
+    if(details.file != 'index') prefix = './public/';
+
+    fs.writeFile(prefix + details.file + '.html',
       jade.compile(jadeFile, {
         pretty    : true,
         filename  : 'uhhhh.html'
