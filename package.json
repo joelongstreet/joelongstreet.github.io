@@ -1,0 +1,13 @@
+{
+  "name": "JoeLongstreet",
+  "version": "0.0.1",
+  "description": "Personal blog of Joe Longstreet",
+  "main": "builder.js",
+  "dependencies": {
+    "jade": "^1.9.1",
+    "live-server": "^0.6.3"
+  },
+  "devDependencies": {},
+  "author": "Joe Longstreet",
+  "license": "MIT"
+}
