@@ -10,14 +10,19 @@ html(lang='en')
     meta(name='viewport' content='width=device-width initial-scale=1')
     meta(name='keywords' content=keywords)
     meta(name='description' content=excerpt)
+    link(rel='stylesheet', href='/public/style.css')
     block head
 
   body
-    h1
-      a(href='/') Joe Longstreet
+    header.contained.primary
+      h1
+        a(href='/') Joe Longstreet
+
     article
       block article
 
-    footer Joe Longstreet
+    footer.contained.primary
+      h2
+        a(href='/') Joe Longstreet
     block foot
     include ./_analytics.jade
