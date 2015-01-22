@@ -48,7 +48,10 @@ var compileJadeFile = function(filename){
 
   if(details && details.file){
     var prefix = '';
-    if(details.file != 'index') prefix = './public/';
+    if(details.file != 'index')
+      prefix = './dest/';
+    else
+      details.pages = config;
 
     fs.writeFile(prefix + details.file + '.html',
       jade.compile(jadeFile, {
