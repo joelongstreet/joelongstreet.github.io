@@ -1,9 +1,17 @@
 [
   {
-    "title"     : "some title",
-    "keywords"  : "abc, 123",
+    "title"     : "Joe Longstreet - maker",
+    "keywords"  : "Joe Longstreet, Kansas City, made, maker",
+    "excerpt"   : "Things made by Joe Longstreet",
+    "file"      : "index",
+    "date"      : 1421900190
+  },
+  {
+    "title"     : "RetroPie",
+    "keywords"  : "retropie",
+    "highlight" : "retropie.jpg",
     "excerpt"   : "this is the excerpt",
-    "file"      : "abc",
-    "date"      : ""
+    "file"      : "retropie",
+    "date"      : 1421900190
   }
 ]
