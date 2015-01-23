@@ -14,6 +14,10 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li{
 header.primary h1{
   margin: 10px 0;
 }
+header.primary small{
+  font-size: 50%;
+  margin-left: 20px;
+}
 header.primary a{
   text-decoration: none;
   color: black;
@@ -23,6 +27,19 @@ header.primary a{
 footer.primary{
   padding-top: 20px;
   text-align: center;
+}
+footer.primary h1{
+  font-size: 110%;
+  margin-bottom: 10px;
+}
+footer.primary a{
+  text-decoration: none;
+  color: black;
+}
+footer.primary li{
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 40px;
 }
 
 

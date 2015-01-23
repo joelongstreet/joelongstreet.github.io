@@ -17,12 +17,22 @@ html(lang='en')
     header.contained.primary
       h1
         a(href='/') Joe Longstreet
+          small An inventor / maker living in Kansas City, Missouri
 
     article
       block article
 
     footer.contained.primary
-      h2
+      h1
         a(href='/') Joe Longstreet
+      nav
+        ul
+          li
+            a(href='https://github.com/joelongstreet/', target='_blank') on Github
+          li
+            a(href='http://twitter.com/joelongstreet', target='_blank') on Twitter
+          li
+            a(href='http://instagram.com/joelongstreet', target='_blank') on Instagram
+
     block foot
     include ./_analytics.jade
