@@ -1,18 +1,33 @@
-html, body, h1, h2, h3, h4, h5, h6, p, ul, li{
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li{
   margin: 0;
   padding: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Lora', serif;
 }
-
-.contained{
-  max-width: 1260px;
-  margin: auto;
-  padding: 0 5%;
+body{
+  overflow-x: hidden;
 }
 
 
+
+
+header.primary{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background-color: #f3f3f3;
+  border-bottom: 2px solid #dcdcdc;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  overflow: hidden;
+}
 header.primary h1{
-  margin: 10px 0;
+  font-size: 100%;
+  padding-bottom: 5px;
+  margin: 0;
+}
+header.primary h2{
+  font-size: 80%;
+  font-family: 'Open Sans Condensed', serif;
 }
 header.primary small{
   font-size: 50%;
@@ -24,13 +39,17 @@ header.primary a{
 }
 
 
+
+
 footer.primary{
-  padding-top: 20px;
+  position: relative;
+  z-index: 2;
+  padding: 7px 0 15px 0;
+  font-size: 70%;
   text-align: center;
-}
-footer.primary h1{
-  font-size: 110%;
-  margin-bottom: 10px;
+  background-color: #f3f3f3;
+  border-top: 2px solid #dcdcdc;
+  overflow: hidden;
 }
 footer.primary a{
   text-decoration: none;
@@ -39,10 +58,70 @@ footer.primary a{
 footer.primary li{
   list-style-type: none;
   display: inline-block;
+  padding-top: 5px;
   padding-right: 40px;
+}
+footer.primary li:last-child{
+  padding-right: 0;
 }
 
 
+
+
+article {
+  position: relative;
+  z-index: 1;
+}
+
+article header{
+  margin-bottom: 30px;
+}
+article header h1{
+  font-weight: normal;
+  font-size: 300%;
+  margin-bottom: 0px;
+  font-family: 'Open Sans Condensed', serif;
+}
+article header h2{
+  font-size: 130%;
+}
+
+article section{
+  overflow-x: hidden;
+}
+article section.padded{
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+article h3{
+  margin-bottom: 20px;
+  font-size: 140%;
+  font-family: 'Open Sans Condensed', serif;
+  opacity: .8;
+}
+article p, article li{
+  line-height: 190%;
+  font-size: 100%;
+  margin-bottom: 20px;
+}
+article li{
+  list-style-position: inside;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+
+
+
+/* utils */
+.contained{
+  max-width: 1300px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .grid{
   width: 100%;
   overflow: hidden;
@@ -56,4 +135,51 @@ footer.primary li{
 .grid .item.item-four{
   width: 25%;
   padding-bottom: 25%;
+}
+
+
+
+
+/* desktops and laptops... */
+@media only screen and (min-width : 800px) {
+  header.primary{
+    position: fixed;
+    margin-bottom: 40px;
+  }
+  header.primary h1{
+    float: left;
+  }
+  header.primary h2{
+    float: right;
+  }
+
+  footer.primary{
+    font-size: 90%;
+  }
+
+  article.primary{
+    padding-top: 50px;
+  }
+  article p, article li{
+    font-size: 120%;
+  }
+  article section.sit-left .content{
+    width: 65%;
+  }
+  article section.sit-right .content{
+    padding-left: 35%
+  }
+  article section.sit-center .content{
+    width: 60%;
+    margin: auto;
+  }
+  article section.sit-center-wide .content{
+    width: 75%;
+    margin: auto;
+  }
+
+  .contained{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }

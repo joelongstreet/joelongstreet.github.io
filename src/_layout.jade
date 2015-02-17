@@ -10,22 +10,22 @@ html(lang='en')
     meta(name='viewport' content='width=device-width initial-scale=1')
     meta(name='keywords' content=keywords)
     meta(name='description' content=excerpt)
+    link(href='http://fonts.googleapis.com/css?family=Lora|Open+Sans+Condensed:700', rel='stylesheet', type='text/css')
     link(rel='stylesheet', href='/public/style.css')
     block head
 
   body
-    header.contained.primary
-      h1
-        a(href='/') Joe Longstreet
-          small An inventor / maker living in Kansas City, Missouri
+    header.primary
+      .contained
+        h1
+          a(href='/') Joe Longstreet
+        h2 An inventor / maker living in Kansas City, Missouri
 
-    article
+    article.primary
       block article
 
-    footer.contained.primary
-      h1
-        a(href='/') Joe Longstreet
-      nav
+    footer.primary
+      nav.contained
         ul
           li
             a(href='https://github.com/joelongstreet/', target='_blank') on Github
@@ -34,5 +34,5 @@ html(lang='en')
           li
             a(href='http://instagram.com/joelongstreet', target='_blank') on Instagram
 
-    block foot
+    block extras
     include ./_analytics.jade
