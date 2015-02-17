@@ -1,5 +1,104 @@
 extends ./src/_layout.jade
 
 block article
-  header
+  header.contained
     h1= title
+    h2= excerpt
+
+
+  section.sit-left.first
+    .contained
+      .content
+        p My wife's family does a "pinterest Christmas" each year around the holidays. Instead of buying gifts, we'll all make a few things - <a href='https://www.google.com/search?q=photo+coaster&espv=2&biw=840&bih=928&source=lnms&tbm=isch&sa=X&ei=wXviVK-FF4mdNqKZgJAH&ved=0CAkQ_AUoBA' target='_blank'>photo coasters</a>, soap, shaving cream, picture frames, and other hand made goods.
+        p I remembered seeing a few projects which were turning <a href='http://www.raspberrypi.org' target='_blank'>Raspberry Pis</a> into retro arcade emulators. Most of the family had grown up playing classic NES games and besides, I definitely wanted one of these for myself.
+  
+  
+  section.sit-right.second
+    .contained
+      .content
+        img(src='/public/img/donkey-kong.png')
+    .kong-border
+
+
+  section.sit-center.third.padded
+    .contained
+      .content
+        p Downloading and installing the <a href='http://blog.petrockblock.com/retropie/' target='blank'>RetroPie</a> image was straight forward. The directions are clear and it's realtively quick to get everything set up. It's an excellent project and makes retro gaming available at a minimal investment. Adding games could be challenging for the novice hobbyist, but it's not super difficult.
+        p The people who would be receiving this console as a gift weren't used to playing complex video games. They love and remember the classic style two button controllers. This poses a few problems when creating an emulation station:
+
+
+  section.sit-center-wide.fourth.padded
+    .contained
+      .content
+        ul
+          li After playing a game, how can they return to the menu to select a new game?
+          li If it's off, how do they turn it back on?
+          li The pi doesn't take kindly to repetitive plugging and unplugging from a wall receptacle. How can they safely turn off the console?
+
+
+  section.sit-right.fifth.padded
+    .contained
+      .content
+        p Taking advantage of the pi's GPIO pins and using physical independent button input seemed to be the best way. I <a href='www.thingiverse.com/thing:432969' target='_blank'>found a case</a> that was a close fit for my project and only required a few minor modifications. Only thing I had to do was add some slits for three standard mini push buttons and a touch of personalization. You can <a target='_blank' href='' target='_blank'>download the .eps file</a> for laser cutting if you like.
+
+
+  section.sit-center.sixth.padded
+    .contained
+      .content
+        p The next step was to add a start script to the pi which can detect button input. Found something pretty close and tweaked it, you can grab the code as a <a href='https://gist.github.com/joelongstreet/1a2b63f236f0cea92b18' target='_blank'>gist</a>. There's a <a href='http://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/' target='_blank'>nice instructable</a> on launching a python script on startup.
+        p The on button is wired slightly differently since the OS can't detect input if it's off. You can use the <a href='http://elinux.org/RPi_Low-level_peripherals#P6_header' target='_blank'>P6 header.</a>
+        p That's it! I wrapped them up in little boxes with preloaded SD Cards, a power supply, some retro usb nes controllers, and a fully assembeled case.
+
+
+block extras
+  style(type='text/css').
+    .kong-border{
+      background: url('/public/img/donkey-kong-border.png') repeat-x;
+      background-position: bottom;
+      height: 30px;
+    }
+    section.third{
+      background-color: rgba(0,0,0,.8);
+      color: white;
+    }
+    section.third a{
+      color : rgba(255,255,255,.7);
+    }
+    section.fourth {
+      background-color: rgba(0,0,0,.85);
+      color: white;
+    }
+    section.fourth li{
+      list-style-type: none;
+      padding-bottom: 30px;
+      text-align: center;
+      font-style: italic;
+    }
+    section.fourth li:last-child{
+      padding-bottom: 0;
+    }
+    section.fifth.padded{
+      background: url('/public/img/mario-tube.png');
+      background-size: 30%;
+      padding-bottom: 150px;
+      background-position: 0 bottom;
+      background-repeat: repeat-x;
+    }
+    section.sixth.padded{
+      padding-bottom: 300px;
+      background: #00ccff url('/public/img/duck-hunt-dog.png') no-repeat;
+      background-position: bottom center;
+      background-size: 250px;
+    }
+    section.sixth .content{
+      background-color: #fff;
+      padding: 15px 25px 5px;
+    }
+    @media only screen and (min-width : 800px) {
+      section.fifth.padded{
+        background-size: 40%;
+        background-position: -30px bottom;
+        background-repeat: no-repeat;
+        padding-bottom: 30px;
+      }
+    }

@@ -8,20 +8,134 @@
     <meta name="creator" content="Joe Longstreet">
     <meta name="publisher" content="Joe Longstreet">
     <meta name="viewport" content="width=device-width initial-scale=1">
-    <meta name="keywords" content="retropie">
-    <meta name="description" content="this is the excerpt">
+    <meta name="keywords" content="raspberry pi, video games, NES, arcade games, emulator retropie">
+    <meta name="description" content="a raspberry pi powered arcade emulator">
+    <link href="http://fonts.googleapis.com/css?family=Lora|Open+Sans+Condensed:700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/public/style.css">
   </head>
   <body>
-    <header class="contained primary">
-      <h1><a href="/">Joe Longstreet</a></h1>
+    <header class="primary">
+      <div class="contained">
+        <h1><a href="/">Joe Longstreet</a></h1>
+        <h2>An inventor / maker living in Kansas City, Missouri</h2>
+      </div>
     </header>
-    <article>
-      <header>
+    <article class="primary">
+      <header class="contained">
         <h1>RetroPie</h1>
+        <h2>a raspberry pi powered arcade emulator</h2>
       </header>
+      <section class="sit-left first">
+        <div class="contained">
+          <div class="content">
+            <p>My wife's family does a "pinterest Christmas" each year around the holidays. Instead of buying gifts, we'll all make a few things - <a href='https://www.google.com/search?q=photo+coaster&espv=2&biw=840&bih=928&source=lnms&tbm=isch&sa=X&ei=wXviVK-FF4mdNqKZgJAH&ved=0CAkQ_AUoBA' target='_blank'>photo coasters</a>, soap, shaving cream, picture frames, and other hand made goods.</p>
+            <p>I remembered seeing a few projects which were turning <a href='http://www.raspberrypi.org' target='_blank'>Raspberry Pis</a> into retro arcade emulators. Most of the family had grown up playing classic NES games and besides, I definitely wanted one of these for myself.</p>
+          </div>
+        </div>
+      </section>
+      <section class="sit-right second">
+        <div class="contained">
+          <div class="content"><img src="/public/img/donkey-kong.png"></div>
+        </div>
+        <div class="kong-border"></div>
+      </section>
+      <section class="sit-center third padded">
+        <div class="contained">
+          <div class="content">
+            <p>Downloading and installing the <a href='http://blog.petrockblock.com/retropie/' target='blank'>RetroPie</a> image was straight forward. The directions are clear and it's realtively quick to get everything set up. It's an excellent project and makes retro gaming available at a minimal investment. Adding games could be challenging for the novice hobbyist, but it's not super difficult.</p>
+            <p>The people who would be receiving this console as a gift weren't used to playing complex video games. They love and remember the classic style two button controllers. This poses a few problems when creating an emulation station:</p>
+          </div>
+        </div>
+      </section>
+      <section class="sit-center-wide fourth padded">
+        <div class="contained">
+          <div class="content">
+            <ul>
+              <li>After playing a game, how can they return to the menu to select a new game?</li>
+              <li>If it's off, how do they turn it back on?</li>
+              <li>The pi doesn't take kindly to repetitive plugging and unplugging from a wall receptacle. How can they safely turn off the console?</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="sit-right fifth padded">
+        <div class="contained">
+          <div class="content">
+            <p>Taking advantage of the pi's GPIO pins and using physical independent button input seemed to be the best way. I <a href='www.thingiverse.com/thing:432969' target='_blank'>found a case</a> that was a close fit for my project and only required a few minor modifications. Only thing I had to do was add some slits for three standard mini push buttons and a touch of personalization. You can <a target='_blank' href='' target='_blank'>download the .eps file</a> for laser cutting if you like.</p>
+          </div>
+        </div>
+      </section>
+      <section class="sit-center sixth padded">
+        <div class="contained">
+          <div class="content">
+            <p>The next step was to add a start script to the pi which can detect button input. Found something pretty close and tweaked it, you can grab the code as a <a href='https://gist.github.com/joelongstreet/1a2b63f236f0cea92b18' target='_blank'>gist</a>. There's a <a href='http://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/' target='_blank'>nice instructable</a> on launching a python script on startup.</p>
+            <p>The on button is wired slightly differently since the OS can't detect input if it's off. You can use the <a href='http://elinux.org/RPi_Low-level_peripherals#P6_header' target='_blank'>P6 header.</a></p>
+            <p>That's it! I wrapped them up in little boxes with preloaded SD Cards, a power supply, some retro usb nes controllers, and a fully assembeled case.</p>
+          </div>
+        </div>
+      </section>
     </article>
-    <footer class="contained primary">Joe Longstreet</footer>
+    <footer class="primary">
+      <nav class="contained">
+        <ul>
+          <li><a href="https://github.com/joelongstreet/" target="_blank">on Github</a></li>
+          <li><a href="http://twitter.com/joelongstreet" target="_blank">on Twitter</a></li>
+          <li><a href="http://instagram.com/joelongstreet" target="_blank">on Instagram</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <style type="text/css">
+      .kong-border{
+        background: url('/public/img/donkey-kong-border.png') repeat-x;
+        background-position: bottom;
+        height: 30px;
+      }
+      section.third{
+        background-color: rgba(0,0,0,.8);
+        color: white;
+      }
+      section.third a{
+        color : rgba(255,255,255,.7);
+      }
+      section.fourth {
+        background-color: rgba(0,0,0,.85);
+        color: white;
+      }
+      section.fourth li{
+        list-style-type: none;
+        padding-bottom: 30px;
+        text-align: center;
+        font-style: italic;
+      }
+      section.fourth li:last-child{
+        padding-bottom: 0;
+      }
+      section.fifth.padded{
+        background: url('/public/img/mario-tube.png');
+        background-size: 30%;
+        padding-bottom: 150px;
+        background-position: 0 bottom;
+        background-repeat: repeat-x;
+      }
+      section.sixth.padded{
+        padding-bottom: 300px;
+        background: #00ccff url('/public/img/duck-hunt-dog.png') no-repeat;
+        background-position: bottom center;
+        background-size: 250px;
+      }
+      section.sixth .content{
+        background-color: #fff;
+        padding: 15px 25px 5px;
+      }
+      @media only screen and (min-width : 800px) {
+        section.fifth.padded{
+          background-size: 40%;
+          background-position: -30px bottom;
+          background-repeat: no-repeat;
+          padding-bottom: 30px;
+        }
+      }
+    </style>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
