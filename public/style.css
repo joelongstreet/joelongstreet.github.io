@@ -162,9 +162,6 @@ article li{
   article.primary{
     padding-top: 60px;
   }
-  article p, article li{
-    font-size: 120%;
-  }
   article section.sit-left .content{
     width: 65%;
   }
