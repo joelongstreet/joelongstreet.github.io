@@ -148,9 +148,11 @@ article li{
   }
   header.primary h1{
     float: left;
+    padding-top: 4px;
   }
   header.primary h2{
     float: right;
+    padding-top: 3px;
   }
 
   footer.primary{
@@ -158,7 +160,7 @@ article li{
   }
 
   article.primary{
-    padding-top: 50px;
+    padding-top: 60px;
   }
   article p, article li{
     font-size: 120%;
