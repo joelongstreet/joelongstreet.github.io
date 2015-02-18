@@ -1,0 +1,37 @@
+extends ./src/_layout.jade
+
+block article
+  header.contained
+    h1= title
+    h2= excerpt
+
+
+  section.sit-left
+    .contained
+      .content
+        p Way back in 2011, I was asked to write <a href='http://www.vml.com/news-and-trends/articles/future-javascript-based-applications' target='_blank'>an article</a> on how I viewed the future of JavaScript. This post is intended to be an easy reference to the <a href='http://www.vml.com/news-and-trends/articles/future-javascript-based-applications' target='_blank'>original</a>. To give you a sense of what the world wide web was like back then, here's an abbreviated list of some bold trend predictions from Web Design Ledger:
+        ul
+          li Designing for Touch Screens, Not Mice
+          li Constant Connection/ Life Stream - <em>"...people will let you know where they are at any moment of the day via Foursquare."</em>
+          li Mobile Ready websites
+          li and... QR Codes :)
+    .qr-border
+
+
+  section.sit-center.padded
+    .contained
+      .content
+        p Feels like a long time ago, sigh. You can view the full list of predictions at <a href='http://webdesignledger.com/tips/web-design-trends-in-2011' target='_blank'>Web Design Ledger</a>.
+        p Reading my <a href='http://www.vml.com/news-and-trends/articles/future-javascript-based-applications' target='_blank'>original article</a> 3 years later, I think most of what I said still holds true, especially this one: <strong>JavaScript Is Growing</strong>. In fact, it's growing and changing faster now than it was in 2011.
+        p My listing of popular JavaScript frameworks for that year looks like an old boneyard - Underscore, Backbone, and even Knockout. Even though it's sad to see great libraries get replaced so quickly, it's an essential part of growth. Being a technologist is all about learning and adapting to change. No other technology is growing at such a rate and with such community interest.
+        p I'm happy to be a part of it.
+
+
+block extras
+  style(type='text/css').
+    .qr-border{
+      background: url('/public/img/qr-codes.png') repeat-x;
+      background-position: bottom;
+      height: 150px;
+      background-size: contain;
+    }
