@@ -1,0 +1,19 @@
+extends ./src/_layout.jade
+
+
+block article
+  .grid
+    each page in pages
+      if(page.file != "index")
+        if(page.poster)
+          +backgroundItem(page)
+        else
+          +klassedItem(page)
+
+
+mixin backgroundItem(page)
+  a.item.item-four(title="#{page.title}", alt="#{page.excerpt}", href="/dest/#{page.file}.html", style="background-image:url('/public/posters/#{page.poster}')")
+
+mixin klassedItem(page)
+  a.item.item-four(title="#{page.title}", alt="#{page.excerpt}", href="/dest/#{page.file}.html", class="#{klass}")
+    h2= page.title

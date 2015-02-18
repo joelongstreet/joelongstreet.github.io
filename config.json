@@ -1,16 +1,16 @@
 [
   {
-    "title"     : "Joe Longstreet - maker",
-    "keywords"  : "Joe Longstreet, Kansas City, made, maker",
-    "excerpt"   : "Things made by Joe Longstreet",
-    "file"      : "index",
+    "title"     : "Joe Longstreet - inventor, maker",
+    "keywords"  : "Joe Longstreet, Kansas City, inventor, made, maker",
+    "excerpt"   : "Things invented / made by Joe Longstreet",
+    "file"      : "home",
     "date"      : 1421900190
   },
   {
     "title"     : "RetroPie",
-    "keywords"  : "retropie",
-    "highlight" : "retropie.jpg",
-    "excerpt"   : "this is the excerpt",
+    "keywords"  : "raspberry pi, video games, NES, arcade games, emulator retropie",
+    "poster"    : "retropie.jpg",
+    "excerpt"   : "a raspberry pi powered arcade emulator",
     "file"      : "retropie",
     "date"      : 1421900190
   }

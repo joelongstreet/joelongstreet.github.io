@@ -48,7 +48,7 @@ var compileJadeFile = function(filename){
 
   if(details && details.file){
     var prefix = '';
-    if(details.file != 'index')
+    if(details.file != 'home')
       prefix = './dest/';
     else
       details.pages = config;
