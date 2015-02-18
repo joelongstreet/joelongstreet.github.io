@@ -6,28 +6,28 @@ block article
     h2= excerpt
 
 
-  section.sit-left.first
+  section.sit-left
     .contained
       .content
         p My wife's family does a "pinterest Christmas" each year around the holidays. Instead of buying gifts, we'll all make a few things - <a href='https://www.google.com/search?q=photo+coaster&espv=2&biw=840&bih=928&source=lnms&tbm=isch&sa=X&ei=wXviVK-FF4mdNqKZgJAH&ved=0CAkQ_AUoBA' target='_blank'>photo coasters</a>, soap, shaving cream, picture frames, and other hand made goods.
         p I remembered seeing a few projects which were turning <a href='http://www.raspberrypi.org' target='_blank'>Raspberry Pis</a> into retro arcade emulators. Most of the family had grown up playing classic NES games and besides, I definitely wanted one of these for myself.
   
   
-  section.sit-right.second
+  section.sit-right
     .contained
       .content
         img(src='/public/img/donkey-kong.png')
     .kong-border
 
 
-  section.sit-center.third.padded
+  section.sit-center.grey.padded
     .contained
       .content
         p Downloading and installing the <a href='http://blog.petrockblock.com/retropie/' target='blank'>RetroPie</a> image was straight forward. The directions are clear and it's realtively quick to get everything set up. It's an excellent project and makes retro gaming available at a minimal investment. Adding games could be challenging for the novice hobbyist, but it's not super difficult.
         p The people who would be receiving this console as a gift weren't used to playing complex video games. They love and remember the classic style two button controllers. This poses a few problems when creating an emulation station:
 
 
-  section.sit-center-wide.fourth.padded
+  section.sit-center-wide.black.padded
     .contained
       .content
         ul
@@ -36,13 +36,16 @@ block article
           li The pi doesn't take kindly to repetitive plugging and unplugging from a wall receptacle. How can they safely turn off the console?
 
 
-  section.sit-right.fifth.padded
+  section.sit-right.tubes.padded
     .contained
       .content
         p Taking advantage of the pi's GPIO pins and using physical independent button input seemed to be the best way. I <a href='www.thingiverse.com/thing:432969' target='_blank'>found a case</a> that was a close fit for my project and only required a few minor modifications. Only thing I had to do was add some slits for three standard mini push buttons and a touch of personalization. You can <a target='_blank' href='' target='_blank'>download the .eps file</a> for laser cutting if you like.
+  
+  
+  section.sit-center.case.padded
 
 
-  section.sit-center.sixth.padded
+  section.sit-center.blue.padded
     .contained
       .content
         p The next step was to add a start script to the pi which can detect button input. Found something pretty close and tweaked it, you can grab the code as a <a href='https://gist.github.com/joelongstreet/1a2b63f236f0cea92b18' target='_blank'>gist</a>. There's a <a href='http://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/' target='_blank'>nice instructable</a> on launching a python script on startup.
@@ -57,45 +60,51 @@ block extras
       background-position: bottom;
       height: 30px;
     }
-    section.third{
+    section.grey{
       background-color: rgba(0,0,0,.8);
       color: white;
     }
-    section.third a{
+    section.grey a{
       color : rgba(255,255,255,.7);
     }
-    section.fourth {
+    section.black {
       background-color: rgba(0,0,0,.85);
       color: white;
     }
-    section.fourth li{
+    section.black li{
       list-style-type: none;
       padding-bottom: 30px;
       text-align: center;
       font-style: italic;
     }
-    section.fourth li:last-child{
+    section.black li:last-child{
       padding-bottom: 0;
     }
-    section.fifth.padded{
+    section.tubes.padded{
       background: url('/public/img/mario-tube.png');
       background-size: 30%;
       padding-bottom: 150px;
       background-position: 0 bottom;
       background-repeat: repeat-x;
     }
-    section.sixth.padded{
+    section.case{
+      background: #ad1000 url('/public/img/case-sample.png') repeat-x;
+      min-height: 300px;
+      background-size: contain;
+      background-position: 20px center;
+    }
+    section.blue.padded{
       padding-bottom: 300px;
       background: #00ccff url('/public/img/duck-hunt-dog.png') no-repeat;
       background-position: bottom center;
       background-size: 250px;
     }
-    section.sixth .content{
+    section.blue .content{
       background-color: #fff;
       padding: 15px 25px 5px;
     }
     @media only screen and (min-width : 800px) {
-      section.fifth.padded{
+      section.tubes.padded{
         background-size: 40%;
         background-position: -30px bottom;
         background-repeat: no-repeat;

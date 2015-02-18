@@ -25,7 +25,7 @@
         <h1>RetroPie</h1>
         <h2>a raspberry pi powered arcade emulator</h2>
       </header>
-      <section class="sit-left first">
+      <section class="sit-left">
         <div class="contained">
           <div class="content">
             <p>My wife's family does a "pinterest Christmas" each year around the holidays. Instead of buying gifts, we'll all make a few things - <a href='https://www.google.com/search?q=photo+coaster&espv=2&biw=840&bih=928&source=lnms&tbm=isch&sa=X&ei=wXviVK-FF4mdNqKZgJAH&ved=0CAkQ_AUoBA' target='_blank'>photo coasters</a>, soap, shaving cream, picture frames, and other hand made goods.</p>
@@ -33,13 +33,13 @@
           </div>
         </div>
       </section>
-      <section class="sit-right second">
+      <section class="sit-right">
         <div class="contained">
           <div class="content"><img src="/public/img/donkey-kong.png"></div>
         </div>
         <div class="kong-border"></div>
       </section>
-      <section class="sit-center third padded">
+      <section class="sit-center grey padded">
         <div class="contained">
           <div class="content">
             <p>Downloading and installing the <a href='http://blog.petrockblock.com/retropie/' target='blank'>RetroPie</a> image was straight forward. The directions are clear and it's realtively quick to get everything set up. It's an excellent project and makes retro gaming available at a minimal investment. Adding games could be challenging for the novice hobbyist, but it's not super difficult.</p>
@@ -47,7 +47,7 @@
           </div>
         </div>
       </section>
-      <section class="sit-center-wide fourth padded">
+      <section class="sit-center-wide black padded">
         <div class="contained">
           <div class="content">
             <ul>
@@ -58,14 +58,15 @@
           </div>
         </div>
       </section>
-      <section class="sit-right fifth padded">
+      <section class="sit-right tubes padded">
         <div class="contained">
           <div class="content">
             <p>Taking advantage of the pi's GPIO pins and using physical independent button input seemed to be the best way. I <a href='www.thingiverse.com/thing:432969' target='_blank'>found a case</a> that was a close fit for my project and only required a few minor modifications. Only thing I had to do was add some slits for three standard mini push buttons and a touch of personalization. You can <a target='_blank' href='' target='_blank'>download the .eps file</a> for laser cutting if you like.</p>
           </div>
         </div>
       </section>
-      <section class="sit-center sixth padded">
+      <section class="sit-center case padded"></section>
+      <section class="sit-center blue padded">
         <div class="contained">
           <div class="content">
             <p>The next step was to add a start script to the pi which can detect button input. Found something pretty close and tweaked it, you can grab the code as a <a href='https://gist.github.com/joelongstreet/1a2b63f236f0cea92b18' target='_blank'>gist</a>. There's a <a href='http://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/' target='_blank'>nice instructable</a> on launching a python script on startup.</p>
@@ -90,45 +91,51 @@
         background-position: bottom;
         height: 30px;
       }
-      section.third{
+      section.grey{
         background-color: rgba(0,0,0,.8);
         color: white;
       }
-      section.third a{
+      section.grey a{
         color : rgba(255,255,255,.7);
       }
-      section.fourth {
+      section.black {
         background-color: rgba(0,0,0,.85);
         color: white;
       }
-      section.fourth li{
+      section.black li{
         list-style-type: none;
         padding-bottom: 30px;
         text-align: center;
         font-style: italic;
       }
-      section.fourth li:last-child{
+      section.black li:last-child{
         padding-bottom: 0;
       }
-      section.fifth.padded{
+      section.tubes.padded{
         background: url('/public/img/mario-tube.png');
         background-size: 30%;
         padding-bottom: 150px;
         background-position: 0 bottom;
         background-repeat: repeat-x;
       }
-      section.sixth.padded{
+      section.case{
+        background: #ad1000 url('/public/img/case-sample.png') repeat-x;
+        min-height: 300px;
+        background-size: contain;
+        background-position: 20px center;
+      }
+      section.blue.padded{
         padding-bottom: 300px;
         background: #00ccff url('/public/img/duck-hunt-dog.png') no-repeat;
         background-position: bottom center;
         background-size: 250px;
       }
-      section.sixth .content{
+      section.blue .content{
         background-color: #fff;
         padding: 15px 25px 5px;
       }
       @media only screen and (min-width : 800px) {
-        section.fifth.padded{
+        section.tubes.padded{
           background-size: 40%;
           background-position: -30px bottom;
           background-repeat: no-repeat;
