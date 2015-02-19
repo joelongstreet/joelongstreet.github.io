@@ -5,6 +5,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li{
 }
 body{
   overflow-x: hidden;
+  color: #444444;
 }
 
 
@@ -14,8 +15,7 @@ header.primary{
   position: relative;
   z-index: 2;
   width: 100%;
-  background-color: #f3f3f3;
-  border-bottom: 2px solid #dcdcdc;
+  background-color: #F7F7F7;
   margin-bottom: 10px;
   padding: 10px 0;
   overflow: hidden;
@@ -35,7 +35,7 @@ header.primary small{
 }
 header.primary a{
   text-decoration: none;
-  color: black;
+  color: #444444;
 }
 
 
@@ -47,8 +47,7 @@ footer.primary{
   padding: 7px 0 15px 0;
   font-size: 70%;
   text-align: center;
-  background-color: #f3f3f3;
-  border-top: 2px solid #dcdcdc;
+  background-color: #F7F7F7;
   overflow: hidden;
 }
 footer.primary a{
@@ -79,7 +78,8 @@ article header{
 article header h1{
   font-weight: normal;
   font-size: 300%;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+  line-height: 100%;
   font-family: 'Open Sans Condensed', serif;
 }
 article header h2{
