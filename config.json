@@ -9,7 +9,7 @@
   {
     "title"     : "RetroPie",
     "keywords"  : "raspberry pi, video games, NES, arcade games, emulator retropie",
-    "poster"    : "retropie.jpg",
+    "poster"    : "retropie.png",
     "excerpt"   : "a raspberry pi powered arcade emulator",
     "file"      : "retropie",
     "date"      : 1421900190
@@ -17,7 +17,7 @@
   {
     "title"     : "Future of JavaScript",
     "keywords"  : "JavaScript, future, VML",
-    "poster"    : "qr-code.png",
+    "poster"    : "qr-code.jpg",
     "excerpt"   : "a Blast from the Past, writings from 2011",
     "file"      : "future-of-javascript",
     "date"      : 1421900190

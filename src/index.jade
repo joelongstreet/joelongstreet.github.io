@@ -2,18 +2,50 @@ extends ./src/_layout.jade
 
 
 block article
-  .grid
+  .pages
     each page in pages
       if(page.file != "index")
-        if(page.poster)
-          +backgroundItem(page)
-        else
-          +klassedItem(page)
+        a.page(href="/dest/#{page.file}.html", style="background-image:url('/public/posters/#{page.poster}')")
+          h2.title= page.title
 
 
-mixin backgroundItem(page)
-  a.item.item-four(title="#{page.title}", alt="#{page.excerpt}", href="/dest/#{page.file}.html", style="background-image:url('/public/posters/#{page.poster}')")
-
-mixin klassedItem(page)
-  a.item.item-four(title="#{page.title}", alt="#{page.excerpt}", href="/dest/#{page.file}.html", class="#{klass}")
-    h2= page.title
+block extras
+  style(type='text/css').
+    article.primary{
+      padding-top: 0px;
+    }
+    .pages{
+      overflow: hidden;
+    }
+    .page{
+      margin: 0;
+      list-style-type: none;
+      display: inline-block;
+      float: left;
+      position: relative;
+      width: 50%;
+      padding-bottom: 50%;
+      overflow: hidden;
+      background-size: contain;
+    }
+    a{
+      color: inherit;
+    }
+    h2.title{
+      position: absolute;
+      font-family: 'Open Sans Condensed', serif;
+      font-size: 130%;
+      background-color: white;
+      padding: 10px;
+      bottom: 20px;
+      right: 0;
+    }
+    @media only screen and (min-width : 800px) {
+      article.primary{
+        padding-top: 49px;
+      }
+      .page{
+        width: 25%;
+        padding-bottom: 25%;
+      }
+    }
