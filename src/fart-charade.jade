@@ -1,0 +1,51 @@
+extends ./src/_layout.jade
+
+block article
+  header.contained
+    h1= title
+    h2= excerpt
+
+
+  section.sit-left
+    .contained
+      .content
+        p When Twitter announced their <a href='https://dev.twitter.com/streaming/overview', target='_blank'>streaming API</a> in 2012, I really really wanted to find a reason to use it. An auto updating realtime sidebar social widget sounded excruciatingly uninteresting. But don’t worry, it didn’t take long for genius to strike.
+
+
+  section.sit-center.introducing.padded
+    .contained
+      .content
+        h3 Introducing <a href='http://fartcharade.joelongstreet.com', target='_blank'>FartCharade</a>. A real time Twitter client which loudly and offensively notifies viewers of social media's obsession with farting. It’s funny.
+
+
+  section.sit-center.padded.final-thoughts
+    .contained
+      .content
+        p But srsly, creating this app was a tremendous learning experience. It was one of the first projects I wrote in Node, it introduced me to streaming apis, helped me practice web sockets, and gave me a great excuse to try out Bootstrap.
+        p Unfortunately, the venture money fell through for <a href='http://fartcharade.joelongstreet.com', target='_blank'>FartCharade</a> and no further development is planned on this project.
+
+block extras
+  style(type='text/css').
+    .introducing{
+      background: url('/public/img/charade-background.png') repeat;
+      border-top: 5px solid #f9e091;
+      border-bottom: 5px solid #f9e091;
+    }
+    .introducing .content{
+      background-color: white;
+      padding: 15px 25px 1px;
+      border: 5px solid #f9e091;
+    }
+    .introducing .content a{
+      color: #5073d4;
+      text-decoration: none;
+    }
+    .introducing .content h3{
+      line-height: 170%;
+      text-align: center;
+    }
+    .final-thoughts.padded{
+      background: url('/public/img/poop-emoji.png') repeat-x bottom;
+      padding-bottom: 30px;
+      background-size: 30px;
+    }
