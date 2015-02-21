@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Faceholder</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Joe Longstreet">
+    <meta name="creator" content="Joe Longstreet">
+    <meta name="publisher" content="Joe Longstreet">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="keywords" content="facebook, api, placeholder, image service">
+    <meta name="description" content="realistic human placeholder photos">
+    <link href="http://fonts.googleapis.com/css?family=Lora|Open+Sans+Condensed:700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/public/style.css">
+  </head>
+  <body>
+    <header class="primary">
+      <div class="contained">
+        <h1><a href="/">Joe Longstreet</a></h1>
+        <h2>An inventor / maker living in Kansas City, Missouri</h2>
+      </div>
+    </header>
+    <article class="primary">
+      <header class="contained">
+        <h1>Faceholder</h1>
+        <h2>realistic human placeholder photos</h2>
+      </header>
+      <section class="sit-left">
+        <div class="contained">
+          <div class="content">
+            <p>Whenever I drop in placeholder images, I like them to be as realistic as possible. If the image is a placeholder for a user profile photo, it’s important to use a poorly lit, crazily framed, pixelated, weird looking person. Why? It gives you a better sense of the design decisions you’ll need to make to deemphasize user uploaded content.</p>
+          </div>
+        </div>
+        <div class="faces-border"></div>
+      </section>
+      <section class="sit-center padded">
+        <div class="contained">
+          <div class="content">
+            <h3>Introducing <a href='http://face.joelongstreet.com' target='_blank'>Faceholder</a>, a tool for designers and developers to utilize realistic photos of people.</h3>
+          </div>
+        </div>
+      </section>
+      <section class="sit-right padded utility">
+        <div class="contained">
+          <div class="content">
+            <p>I find quite a bit of utility in this app and use it frequently. What was surprising is how interested I am in all of these people I don’t know. I found myself pulling up <a href='http://face.joelongstreet.com' target='_blank'>Faceholder</a> and just looking at pictures of random people, so I added a links to their profile. Now you can just browse and click people forever.</p>
+          </div>
+        </div>
+      </section>
+      <section class="sit-center padded">
+        <div class="contained">
+          <div class="content">
+            <h3>How it works</h3>
+            <p>In the background, the app is repetitively doing a procedure. An abbreviated itinerary:</p>
+            <ol>
+              <li>Pick a random number between 1 and a billionish (roughly the population of Facebook).</li>
+              <li>Ask Facebook for the profile URL of a user with an id that matches the random number.</li>
+              <li>Bounce around to a bunch of different URLs until Facebook finally hands off the profile image of the requested user.</li>
+              <li>Save a reference to it.</li>
+              <li>Repeat FOREVER.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="sit-left findings padded">
+        <div class="contained">
+          <div class="content">
+            <p>The first few times I ran the above procedure, I found 90+% of the photos collected were exactly the same. The image was the default photo for users who hadn’t yet uploaded profile pictures. Strange…, I wonder what percentage of Facebook users are robots or dead accounts and what percent are <em>actual human users</em>.</p>
+          </div>
+        </div>
+      </section>
+      <section class="sit-center padded">
+        <div class="contained">
+          <div class="content">
+            <h3>A billionish “users” * 10% (a very very generous 10 percent) of human photos ≈ 100 million.</h3>
+          </div>
+        </div>
+      </section>
+    </article>
+    <footer class="primary">
+      <nav class="contained">
+        <ul>
+          <li><a href="https://github.com/joelongstreet/" target="_blank">on Github</a></li>
+          <li><a href="http://twitter.com/joelongstreet" target="_blank">on Twitter</a></li>
+          <li><a href="http://instagram.com/joelongstreet" target="_blank">on Instagram</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <style type="text/css">
+      .faces-border{
+        background: url('/public/img/faces.jpg') repeat-x;
+        background-position: bottom;
+        height: 100px;
+      }
+      .utility{
+        color: white;
+        background: #3b5998;
+      }
+      .utility a{
+        color: pink;
+      }
+      .findings{
+        color: white;
+        background: #3b5998 url('/public/img/default-photo.png') no-repeat bottom right;
+        background-size: 20%;
+      }
+    </style>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-3920837-6', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

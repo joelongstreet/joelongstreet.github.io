@@ -29,5 +29,13 @@
     "excerpt"   : "so dumb",
     "file"      : "fart-charade",
     "date"      : 1424531977
+  },
+  {
+    "title"     : "Faceholder",
+    "keywords"  : "facebook, api, placeholder, image service",
+    "poster"    : "faceholder.jpg",
+    "excerpt"   : "realistic human placeholder photos",
+    "file"      : "faceholder",
+    "date"      : 1424535833
   }
 ]

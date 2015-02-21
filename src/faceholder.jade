@@ -1,0 +1,71 @@
+extends ./src/_layout.jade
+
+block article
+  header.contained
+    h1= title
+    h2= excerpt
+
+
+  section.sit-left
+    .contained
+      .content
+        p Whenever I drop in placeholder images, I like them to be as realistic as possible. If the image is a placeholder for a user profile photo, it’s important to use a poorly lit, crazily framed, pixelated, weird looking person. Why? It gives you a better sense of the design decisions you’ll need to make to deemphasize user uploaded content.
+    .faces-border
+
+
+  section.sit-center.padded
+    .contained
+      .content
+        h3 Introducing <a href='http://face.joelongstreet.com' target='_blank'>Faceholder</a>, a tool for designers and developers to utilize realistic photos of people.
+
+
+  section.sit-right.padded.utility
+    .contained
+      .content
+        p I find quite a bit of utility in this app and use it frequently. What was surprising is how interested I am in all of these people I don’t know. I found myself pulling up <a href='http://face.joelongstreet.com' target='_blank'>Faceholder</a> and just looking at pictures of random people, so I added a links to their profile. Now you can just browse and click people forever.
+
+
+  section.sit-center.padded
+    .contained
+      .content
+        h3 How it works
+        p In the background, the app is repetitively doing a procedure. An abbreviated itinerary:
+        ol
+          li Pick a random number between 1 and a billionish (roughly the population of Facebook).
+          li Ask Facebook for the profile URL of a user with an id that matches the random number.
+          li Bounce around to a bunch of different URLs until Facebook finally hands off the profile image of the requested user.
+          li Save a reference to it.
+          li Repeat FOREVER.
+
+
+  section.sit-left.findings.padded
+    .contained
+      .content
+        p The first few times I ran the above procedure, I found 90+% of the photos collected were exactly the same. The image was the default photo for users who hadn’t yet uploaded profile pictures. Strange…, I wonder what percentage of Facebook users are robots or dead accounts and what percent are <em>actual human users</em>.
+
+
+  section.sit-center.padded
+    .contained
+      .content
+        h3 A billionish “users” * 10% (a very very generous 10 percent) of human photos ≈ 100 million.
+
+
+block extras
+  style(type='text/css').
+    .faces-border{
+      background: url('/public/img/faces.jpg') repeat-x;
+      background-position: bottom;
+      height: 100px;
+    }
+    .utility{
+      color: white;
+      background: #3b5998;
+    }
+    .utility a{
+      color: pink;
+    }
+    .findings{
+      color: white;
+      background: #3b5998 url('/public/img/default-photo.png') no-repeat bottom right;
+      background-size: 20%;
+    }

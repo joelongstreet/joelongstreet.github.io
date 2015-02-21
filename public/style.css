@@ -108,7 +108,7 @@ article p, article li{
   margin-bottom: 20px;
 }
 article li{
-  list-style-position: inside;
+  list-style-position: outside;
   margin-bottom: 10px;
   margin-left: 25px;
 }
