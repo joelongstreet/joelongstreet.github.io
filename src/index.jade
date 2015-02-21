@@ -5,7 +5,7 @@ block article
   .pages
     each page in pages
       if(page.file != "index")
-        a.page(href="/dest/#{page.file}.html", style="background-image:url('/public/posters/#{page.poster}')")
+        a.page(class="#{page.title}" href="/dest/#{page.file}.html", style="background-image:url('/public/posters/#{page.poster}')")
           h2.title= page.title
 
 
@@ -39,6 +39,8 @@ block extras
       padding: 10px;
       bottom: 20px;
       right: 0;
+      text-align: right;
+      max-width: 75%;
     }
     @media only screen and (min-width : 800px) {
       article.primary{

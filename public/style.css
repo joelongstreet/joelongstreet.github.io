@@ -6,6 +6,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li{
 body{
   overflow-x: hidden;
   color: #444444;
+  background-color: #F7F7F7;
 }
 
 
@@ -66,6 +67,7 @@ footer.primary li:last-child{
 
 
 article.primary{
+  background-color: white;
   padding-top: 10px;
 }
 article {
