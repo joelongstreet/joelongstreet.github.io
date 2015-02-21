@@ -12,14 +12,22 @@
     "poster"    : "retropie.png",
     "excerpt"   : "a raspberry pi powered arcade emulator",
     "file"      : "retropie",
-    "date"      : 1421900190
+    "date"      : 1424013615
   },
   {
     "title"     : "Future of JavaScript",
-    "keywords"  : "JavaScript, future, VML",
+    "keywords"  : "JavaScript, future, VML, frameworks",
     "poster"    : "qr-code.jpg",
     "excerpt"   : "a Blast from the Past, writings from 2011",
     "file"      : "future-of-javascript",
-    "date"      : 1421900190
+    "date"      : 1424272815
+  },
+  {
+    "title"     : "FartCharade",
+    "keywords"  : "twitter, api, farts, stream, web sockets",
+    "poster"    : "fartcharade.png",
+    "excerpt"   : "so dumb",
+    "file"      : "fart-charade",
+    "date"      : 1424531977
   }
 ]
