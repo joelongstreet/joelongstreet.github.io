@@ -1,0 +1,74 @@
+extends ./src/_layout.jade
+
+block article
+  header.contained
+    h1= title
+    h2= excerpt
+
+
+  section.sit-left.intro
+    .contained
+      .content
+        p A few girls from the HR department occasionally travel to nearby universities to participate in recruiting events. They bring lots of Barkley promotional materials, as well as a big rocket sign.
+        p After taking my <a target='_blank' href='https://github.com/MoonshotLab/internet-of-wild-things'>Internet of Wild Thangs Class</a>, one of them had an idea for the rocket. The conversation whent something like this:
+
+
+  section.sit-center.padded.wild-thangs
+    .contained
+      .content
+        h3 <em>“Can we make the rocket light up or something?”</em>
+        h3 <em> “Sure, that sounds pretty cool”</em>
+
+
+  section.sit-right.bit-shifters.padded
+    .contained
+      .content
+        p At this point in my career, I had written several applications which utilized micro controllers, but I had almost no experience with logic chips. I had read a few tutorials about how shift registers could be used to extend the number of outputs from an Arduino. So I wrote a little code, did a lot more soldering than expected, and taped all of it to the back of the rocket. Rocket Surgery.
+
+
+  section.rocket
+
+  section.sit-center.padded.preview
+    .contained
+      .content
+        p The natural white LEDs give the rocket a nice retro glowing look and a potentiometer on the back allows speed adjustment of the light patterns. Now, when HR takes it to recruiting events, kids like to get their picture taken with the rocket.
+        p There’s a little <a target='_blank', href='https://github.com/MoonshotLab/RedRocket'>Github Repo</a> for the code, but I never got around to making a wiring diagram. Check it out:
+        a(target='_blank' href='http://videos-h-15.ak.instagram.com/hphotos-ak-xfa1/10701593_517307925071355_1812367958_n.mp4')
+          img(src='/public/img/rocket-play.jpg')
+
+
+block extras
+  style(type='text/css').
+    section.preview img{
+      width: 100%;
+    }
+    section.rocket{
+      background: url('/public/img/rocket.jpg') repeat-x;
+      background-size: contain;
+      height: 200px;
+    }
+    .bit-shifters.padded{
+      background-image: url('/public/img/74hc595n.jpg');
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: 35%;
+      padding-bottom: 150px;
+    }
+    .wild-thangs{
+      color: white;
+      background-color: #bf2e1a;
+      text-align: center;
+      border-top: 10px solid #ef4c35;
+      border-bottom: 10px solid #ef4c35;
+    }
+    .wild-thangs img{
+      width: 100%;
+      border: 10px solid white;
+    }
+    @media only screen and (min-width : 800px) {
+      .bit-shifters.padded{
+        background-position: center left;
+        padding-bottom: 20px;
+        background-size: 25%;
+      }
+    }

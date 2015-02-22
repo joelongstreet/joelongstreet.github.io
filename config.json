@@ -37,5 +37,13 @@
     "excerpt"   : "realistic human placeholder photos",
     "file"      : "faceholder",
     "date"      : 1424535833
+  },
+  {
+    "title"     : "Red Rocket",
+    "keywords"  : "arduino, electronics, bit shift register, 74hc595n",
+    "poster"    : "red-rocket.jpg",
+    "excerpt"   : "arduino + bit shifters + leds = rocket surgery",
+    "file"      : "redrocket",
+    "date"      : 1424621770
   }
 ]
