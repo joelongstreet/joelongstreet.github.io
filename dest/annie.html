@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Annie</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Joe Longstreet">
+    <meta name="creator" content="Joe Longstreet">
+    <meta name="publisher" content="Joe Longstreet">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="keywords" content="annie, chrome extension, passport, vml, automation">
+    <meta name="description" content="automating a repetitive work flow">
+    <link href="http://fonts.googleapis.com/css?family=Lora|Open+Sans+Condensed:700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="icon" href="public/favicon.ico">
+    <link rel="apple-touch-icon" href="public/apple-touch-icon.png">
+  </head>
+  <body>
+    <header class="primary">
+      <div class="contained">
+        <h1><a href="/">Joe Longstreet</a></h1>
+        <h2>An inventor / maker living in Kansas City, Missouri</h2>
+      </div>
+    </header>
+    <article class="primary">
+      <header class="contained">
+        <h1>Annie</h1>
+        <h2>automating a repetitive work flow</h2>
+      </header>
+      <section class="sit-left intro">
+        <div class="contained">
+          <div class="content">
+            <p>At a place of former employment, the Director of First Impressions (Annie) got stuck with the repetitive task of cross checking employee data across internal platforms. HR and the intranet team both kept their own employee records - data merging and verification was completed manually by Annie.</p>
+            <p>Annie had a set of very repetitive, error prone, difficult tasks:</p>
+          </div>
+        </div>
+      </section>
+      <section class="sit-center padded tasks">
+        <div class="contained">
+          <div class="content">
+            <ul>
+              <li>Receive a spreadsheet from HR with sets of employee data organized by department</li>
+              <li>Visit various individual employee profile pages on the corporate intranet</li>
+              <li>Check each page manually to verify the data on the HR spreadsheet matched the given profile</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="sit-center padded">
+        <div class="contained">
+          <div class="content">
+            <p>What she really wanted to do is pull filtered employee data from the intranet in the form of a spreadsheet. She could then use excel to automate her task.</p>
+            <p>I definitely felt for her and I’m glad she approached me with the problem. But, as a member of the intranet team, I was hesitant to add this functionality directly into the application. It was such a fringe case and our feature request list was already unmanageable. </p>
+            <p>When Todd and I designed the intranet, we knew requests like this would come up. The entire interface of the application was abstracted from the server using various REST services. But, we had yet to setup oauth, application registration, and other tools necessary for external app API usage.</p>
+            <p>To solve Annie’s problem, I <a href='https://github.com/joelongstreet/Annie' target='_blank'>created a Chrome extension in her name</a>. It used the intranet’s maintained UI filtering system as well as it’s REST query services. It allowed her to download filtered data as a csv and kept us from having to make site wide changes for a single use case.</p>
+          </div>
+        </div>
+      </section>
+      <section class="sit-center cake">
+        <div class="contained">
+          <div class="content"><img src="/public/img/annie-cake.jpg"></div>
+        </div>
+      </section>
+      <section class="sit-center padded">
+        <div class="contained">
+          <div class="content">
+            <p>I later found out that lots of other people started using this plugin in ways I didn’t expect:</p>
+            <ul>
+              <li>compile lists for their department (email, signups, quick lookups)</li>
+              <li>compile property averages for employees based on department, role, and location (eg. what location has the averaged longest tenure).</li>
+            </ul>
+            <p>The corporate intranet is not open source, but <a href='https://github.com/joelongstreet/Annie' target='_blank'>Annie the chrome extension</a> is!</p>
+          </div>
+        </div>
+      </section>
+    </article>
+    <footer class="primary">
+      <nav class="contained">
+        <ul>
+          <li><a href="https://github.com/joelongstreet/" target="_blank">on Github</a></li>
+          <li><a href="http://twitter.com/joelongstreet" target="_blank">on Twitter</a></li>
+          <li><a href="http://instagram.com/joelongstreet" target="_blank">on Instagram</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <style type="text/css">
+      .intro {
+        background: url('/public/img/orphan-annie-pin.jpg') no-repeat;
+        background-position: center bottom;
+        padding-bottom: 200px;
+        background-size: 200px;
+      }
+      .tasks{
+        background-color: rgba(0,0,0,.8);
+        color: white;
+        text-align: center;
+      }
+      .tasks li{
+        list-style-type: none;
+        padding-bottom: 30px;
+        margin-left: 0px;
+        text-align: center;
+        font-style: italic;
+      }
+      .cake img{
+        display: block;
+        width: 50%;
+        margin: auto;
+      }
+      .tasks li:last-child{
+        padding-bottom: 0;
+      }
+      @media only screen and (min-width : 800px) {
+        .intro{
+          background-position: 90% 0;
+          padding-bottom: 0;
+          background-size: contain;
+        }
+      }
+    </style>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-3920837-6', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

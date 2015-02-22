@@ -45,5 +45,13 @@
     "excerpt"   : "arduino + bit shifters + leds = rocket surgery",
     "file"      : "redrocket",
     "date"      : 1424621770
+  },
+  {
+    "title"     : "Annie",
+    "keywords"  : "annie, chrome extension, passport, vml, automation",
+    "poster"    : "annie.png",
+    "excerpt"   : "automating a repetitive work flow",
+    "file"      : "annie",
+    "date"      : 1424636576
   }
 ]
