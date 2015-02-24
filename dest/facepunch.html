@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FacePunch</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Joe Longstreet">
+    <meta name="creator" content="Joe Longstreet">
+    <meta name="publisher" content="Joe Longstreet">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="keywords" content="facebook, gyroscope, accelerometer, mobile, face punch, friend, punching friends">
+    <meta name="description" content="punching faces">
+    <link href="http://fonts.googleapis.com/css?family=Lora|Open+Sans+Condensed:700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="icon" href="public/favicon.ico">
+    <link rel="apple-touch-icon" href="public/apple-touch-icon.png">
+  </head>
+  <body>
+    <header class="primary">
+      <div class="contained">
+        <h1><a href="/">Joe Longstreet</a></h1>
+        <h2>An inventor / maker living in Kansas City, Missouri</h2>
+      </div>
+    </header>
+    <article class="primary">
+      <header class="contained">
+        <h1>FacePunch</h1>
+        <h2>punching faces</h2>
+      </header>
+      <section class="sit-center intro">
+        <div class="contained">
+          <div class="content">
+            <p>Ever want to just punch faces? Yeah, me too. <a href='http://facepunch.joelongstreet.com' target='_blank'>Facepunch</a> allows you to look at a photo and swing wildly at you computer monitor with your fist. You'll be rewarded with amazing sounds and visuals.</p>
+            <p class="backgrounded">Who do you want to punch? Having a hard time coming up with ideas? Ask the app to pull in a list of your Facebook friends and I’m sure you’ll be inspired.</p>
+            <p><a href='http://facepunch.joelongstreet.com' target='_blank'>Facepunch</a> requires a second screen to work, meaning you'll need both a mobile device and a computer mointor.</p>
+            <p>I created this project because I wanted to experiment with the accelerometer and gyroscope within handheld devices. The mobile front end uses a websocket to quickly communicate punch events to a server. The server then finds the correct client side listener and passes along the message. Hopefully you'll enjoy a speedy experience!</p>
+            <p>The code is open source and available as <a href='https://github.com/JoeLongstreet/facepunch' target='_blank'>a github repo</a>.</p>
+          </div>
+        </div>
+      </section>
+    </article>
+    <footer class="primary">
+      <nav class="contained">
+        <ul>
+          <li><a href="https://github.com/joelongstreet/" target="_blank">on Github</a></li>
+          <li><a href="http://twitter.com/joelongstreet" target="_blank">on Twitter</a></li>
+          <li><a href="http://instagram.com/joelongstreet" target="_blank">on Instagram</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <style type="text/css">
+      .intro .backgrounded{
+        background: url('/public/img/facepunch.png') repeat-x;
+        background-position: bottom center;
+        background-size: 225px;
+        padding-bottom: 225px;
+      }
+      @media only screen and (min-width : 800px) {
+        .intro {
+          background: url('/public/img/facepunch.png');
+          background-size: 225px;
+          background-position: top left;
+        }
+        .intro .backgrounded{
+          background-image: none;
+          padding-bottom: 0;
+        }
+        .intro .content{
+          padding: 10px;
+          background-color: white;
+        }
+      }
+    </style>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-3920837-6', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

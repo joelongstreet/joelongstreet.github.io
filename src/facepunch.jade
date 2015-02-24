@@ -1,0 +1,41 @@
+extends ./src/_layout.jade
+
+block article
+  header.contained
+    h1= title
+    h2= excerpt
+
+
+  section.sit-center.intro
+    .contained
+      .content
+        p Ever want to just punch faces? Yeah, me too. <a href='http://facepunch.joelongstreet.com' target='_blank'>Facepunch</a> allows you to look at a photo and swing wildly at you computer monitor with your fist. You'll be rewarded with amazing sounds and visuals.
+        p.backgrounded Who do you want to punch? Having a hard time coming up with ideas? Ask the app to pull in a list of your Facebook friends and I’m sure you’ll be inspired.
+        p <a href='http://facepunch.joelongstreet.com' target='_blank'>Facepunch</a> requires a second screen to work, meaning you'll need both a mobile device and a computer mointor.
+        p I created this project because I wanted to experiment with the accelerometer and gyroscope within handheld devices. The mobile front end uses a websocket to quickly communicate punch events to a server. The server then finds the correct client side listener and passes along the message. Hopefully you'll enjoy a speedy experience!
+        p The code is open source and available as <a href='https://github.com/JoeLongstreet/facepunch' target='_blank'>a github repo</a>.
+
+
+block extras
+  style(type='text/css').
+    .intro .backgrounded{
+      background: url('/public/img/facepunch.png') repeat-x;
+      background-position: bottom center;
+      background-size: 225px;
+      padding-bottom: 225px;
+    }
+    @media only screen and (min-width : 800px) {
+      .intro {
+        background: url('/public/img/facepunch.png');
+        background-size: 225px;
+        background-position: top left;
+      }
+      .intro .backgrounded{
+        background-image: none;
+        padding-bottom: 0;
+      }
+      .intro .content{
+        padding: 10px;
+        background-color: white;
+      }
+    }

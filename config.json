@@ -53,5 +53,13 @@
     "excerpt"   : "automating a repetitive work flow",
     "file"      : "annie",
     "date"      : 1424636576
+  },
+  {
+    "title"     : "FacePunch",
+    "keywords"  : "facebook, gyroscope, accelerometer, mobile, face punch, friend, punching friends",
+    "poster"    : "facepunch.png",
+    "excerpt"   : "punching faces",
+    "file"      : "facepunch",
+    "date"      : 1424663501
   }
 ]
