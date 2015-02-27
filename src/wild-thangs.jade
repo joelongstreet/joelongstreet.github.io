@@ -1,0 +1,50 @@
+extends ./src/_layout.jade
+
+block article
+  header.contained
+    h1= title
+    h2= excerpt
+
+
+  section
+    .contained
+      .content
+        .text
+          p Is it possible for non technical people to invent and create electronics based prototypes? Can it talk to the internet? Could it be a teddy bear, bag of dog food, or disco ball? Can it be done in two hours? These were some of the first questions asked of me when I started at the Moonshot Lab.
+          p After building a few apps (the <a href='https://github.com/MoonshotLab/eddie-o-matic' target='_blank'>Eddie-O-Matic</a>, <a href='https://github.com/MoonshotLab/Market-Watch' target='_blank'>Market Watch</a>) with the spark core, I started thinking about creating a GUI visual programmer. This would allow just about anyone to connect a micro-controller to a recipe based service like <a href='https://ifttt.com/' target='_blank'>IFTTT</a> or <a href='https://zapier.com/' target='_blank'>Zapier</a>. So I <a href='https://github.com/MoonshotLab/internet-of-wild-things' target='_blank'>made it</a>! 
+          p I held a few classes which were open to all Barkley employees. The first portion was a short introduction into electronics where students learned how resistors and LEDs worked. The next step was learning how to use the <a href='https://github.com/MoonshotLab/internet-of-wild-things' target='_blank'>wild-thangs</a> app. A quick overview of Zapier and then we hooked all the pieces together. Magic! Everything is now talking to the internet.
+        img(src='/public/img/tyler.jpg' alt='Tyler Cook')
+
+
+  section
+    .contained
+      .content
+        .text
+          p I was amazed at the creativity and diversity of the prototypes. Some of my favorites were:
+          ul
+            li A bottle of sunscreen which schedules google calendar events which then remind you to reapply.
+            li A television remote with a siren activated from a mobile device. 
+            li Sunglasses that light up when someone mentions you in a tweet.
+
+          p It’s a great feeling to empower others to express their ideas. I really enjoyed teaching these classes and hope to do more in the future. We were even featured in the <a href='http://www.bizjournals.com/kansascity/news/2014/05/22/barkley-advertising-capitalizes-on-internet-of.html?page=all' target='_blank'>KC Business Journal</a>.
+        img(src='/public/img/heather.jpg' alt='Heather Giarratana')
+
+
+block extras
+  style(type='text/css').
+    section img{
+      display: block;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    @media only screen and (min-width : 800px) {
+      section .text{
+        float: right;
+        width: 67%;
+      }
+      section img{
+        float: left;
+        width: 30%;
+      }
+    }

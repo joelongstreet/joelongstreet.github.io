@@ -69,5 +69,13 @@
     "excerpt"   : "play charades with random people on the internet",
     "file"      : "frazy",
     "date"      : 1425053237
+  },
+  {
+    "title"     : "Wild Thangs",
+    "keywords"  : "internet of things, iot, kansas city, electronics, prototype",
+    "poster"    : "wild-thangs.jpg",
+    "excerpt"   : "sun glasses that talk back",
+    "file"      : "wild-thangs",
+    "date"      : 1425065679
   }
 ]
