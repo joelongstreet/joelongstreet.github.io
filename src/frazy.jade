@@ -1,0 +1,60 @@
+extends ./src/_layout.jade
+
+block article
+  header.contained
+    h1= title
+    h2= excerpt
+
+
+  section.sit-left
+    .contained
+      .content
+        p <a href='https://github.com/joeandaverde' target='_blank'>Joe Andaverde</a>, <a target='_blank' href='https://github.com/ruzz311'>Russell Madsen</a>, and I participated in both the 2012 and 2013 <a target='_blank' href='http://nodeknockout.com/'>Node Knockout</a> programming hackathons. We had a ton of fun, drank a bunch of beer, and made awesome stuff. In 2013, we made Frazy.
+
+
+  section.sit-center.directions.padded
+    .contained
+      .content
+        h3 Frazy is a multiplayer charades-ish style game. Players guess the meaning of an actor's movements to gain points and win.
+
+
+  section.sit-center.padded.description
+    .contained
+      .content
+        p As the actor, your job is to physically gesture the phrase shown within the time limit. As you are acting out the word or phrase, other players will submit guesses based upon your actions. The guessers cannot see the full phrase but do receive letter hints (kind of like a half complete wheel of fortune board).
+        h3 A_TS _ _ YO_R PAN_S
+        p Correct guesses earn points for both the player who guessed correctly and the actor. The actor receives double the point value of the word or phrase... because let's face it, acting is hard. After a player or actor accumulates 15 points the round is over.
+
+
+  section.sit-center
+    .contained
+      .content
+        iframe(src="//player.vimeo.com/video/79061982", width="100%" height="360", frameborder="0", webkitallowfullscreen, mozallowfullscreen allowfullscreen)
+        p <a target='_blank' href='https://vimeo.com/79061982'>Node Knockout 2013 - Frazy</a> from <a target='_blank' href='https://vimeo.com/user1075244'>Joe Longstreet</a>.
+
+    
+  section.sit-center
+    .contained
+      .content
+        p It was a hackathon and our code was an absolute mess. I've kept it for reference though, you can check it out as a <a href='https://github.com/joelongstreet/team-name-1' target='_blank'>github repo</a>.
+
+block extras
+  style(type='text/css').
+    .directions{
+      background: url('/public/img/frazy-background.gif');
+      line-height: 200%;
+      text-align: center;
+    }
+    .directions .content{
+      background-color: white;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,.5);
+    }
+    .directions h3{
+      margin-bottom: 0;
+    }
+    .description h3{
+      text-align: center;
+      font-size: 300%;
+    }

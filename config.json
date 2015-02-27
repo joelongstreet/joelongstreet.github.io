@@ -61,5 +61,13 @@
     "excerpt"   : "punching faces",
     "file"      : "facepunch",
     "date"      : 1424663501
+  },
+  {
+    "title"     : "Frazy",
+    "keywords"  : "frazy, node knockout, hackathon, programming competition, charades",
+    "poster"    : "frazy.png",
+    "excerpt"   : "play charades with random people on the internet",
+    "file"      : "frazy",
+    "date"      : 1425053237
   }
 ]
