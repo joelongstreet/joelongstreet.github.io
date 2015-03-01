@@ -7,36 +7,20 @@
     "date"      : 1421900190
   },
   {
+    "title"     : "Wild Thangs",
+    "keywords"  : "internet of things, iot, kansas city, electronics, prototype",
+    "poster"    : "wild-thangs.jpg",
+    "excerpt"   : "sun glasses that talk back",
+    "file"      : "wild-thangs",
+    "date"      : 1425065679
+  },
+  {
     "title"     : "RetroPie",
     "keywords"  : "raspberry pi, video games, NES, arcade games, emulator retropie",
     "poster"    : "retropie.png",
     "excerpt"   : "a raspberry pi powered arcade emulator",
     "file"      : "retropie",
     "date"      : 1424013615
-  },
-  {
-    "title"     : "Future of JavaScript",
-    "keywords"  : "JavaScript, future, VML, frameworks",
-    "poster"    : "qr-code.jpg",
-    "excerpt"   : "a Blast from the Past, writings from 2011",
-    "file"      : "future-of-javascript",
-    "date"      : 1424272815
-  },
-  {
-    "title"     : "FartCharade",
-    "keywords"  : "twitter, api, farts, stream, web sockets",
-    "poster"    : "fartcharade.png",
-    "excerpt"   : "so dumb",
-    "file"      : "fart-charade",
-    "date"      : 1424531977
-  },
-  {
-    "title"     : "Faceholder",
-    "keywords"  : "facebook, api, placeholder, image service",
-    "poster"    : "faceholder.jpg",
-    "excerpt"   : "realistic human placeholder photos",
-    "file"      : "faceholder",
-    "date"      : 1424535833
   },
   {
     "title"     : "Red Rocket",
@@ -55,14 +39,6 @@
     "date"      : 1424636576
   },
   {
-    "title"     : "FacePunch",
-    "keywords"  : "facebook, gyroscope, accelerometer, mobile, face punch, friend, punching friends",
-    "poster"    : "facepunch.png",
-    "excerpt"   : "punching faces",
-    "file"      : "facepunch",
-    "date"      : 1424663501
-  },
-  {
     "title"     : "Frazy",
     "keywords"  : "frazy, node knockout, hackathon, programming competition, charades",
     "poster"    : "frazy.png",
@@ -71,11 +47,35 @@
     "date"      : 1425053237
   },
   {
-    "title"     : "Wild Thangs",
-    "keywords"  : "internet of things, iot, kansas city, electronics, prototype",
-    "poster"    : "wild-thangs.jpg",
-    "excerpt"   : "sun glasses that talk back",
-    "file"      : "wild-thangs",
-    "date"      : 1425065679
+    "title"     : "FacePunch",
+    "keywords"  : "facebook, gyroscope, accelerometer, mobile, face punch, friend, punching friends",
+    "poster"    : "facepunch.png",
+    "excerpt"   : "punching faces",
+    "file"      : "facepunch",
+    "date"      : 1424663501
+  },
+  {
+    "title"     : "FartCharade",
+    "keywords"  : "twitter, api, farts, stream, web sockets",
+    "poster"    : "fartcharade.png",
+    "excerpt"   : "so dumb",
+    "file"      : "fart-charade",
+    "date"      : 1424531977
+  },
+  {
+    "title"     : "Faceholder",
+    "keywords"  : "facebook, api, placeholder, image service",
+    "poster"    : "faceholder.jpg",
+    "excerpt"   : "realistic human placeholder photos",
+    "file"      : "faceholder",
+    "date"      : 1424535833
+  },
+  {
+    "title"     : "Future of JavaScript",
+    "keywords"  : "JavaScript, future, VML, frameworks",
+    "poster"    : "qr-code.jpg",
+    "excerpt"   : "a Blast from the Past, writings from 2011",
+    "file"      : "future-of-javascript",
+    "date"      : 1424272815
   }
 ]
