@@ -15,6 +15,14 @@
     "date"      : 1425065679
   },
   {
+    "title"     : "Eddie-O-Matic",
+    "keywords"  : "spark core, free food",
+    "poster"    : "eddie.jpg",
+    "excerpt"   : "a free food notifier machine",
+    "file"      : "eddie",
+    "date"      : 1425230753
+  },
+  {
     "title"     : "RetroPie",
     "keywords"  : "raspberry pi, video games, NES, arcade games, emulator retropie",
     "poster"    : "retropie.png",

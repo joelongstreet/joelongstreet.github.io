@@ -102,6 +102,11 @@ article h3{
   font-size: 140%;
   font-family: 'Open Sans Condensed', serif;
 }
+article h4{
+  margin-bottom: 20px;
+  font-size: 120%;
+  font-family: 'Open Sans Condensed', serif;
+}
 article p, article li{
   line-height: 190%;
   font-size: 100%;

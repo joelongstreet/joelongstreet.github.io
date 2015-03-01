@@ -1,0 +1,61 @@
+extends ./src/_layout.jade
+
+block article
+  header.contained
+    h1= title
+    h2= excerpt
+
+
+  section.sit-left.intro
+    .contained
+      .content
+        p There always seems to be free food floating around the office and our front desk person (Eddie) knows exactly where to find it. He’ll send out company wide e-mails telling everyone they can gorge themselves on whatever leftovers are available from the last client meeting - cupcakes, bbq pork ribs, maybe a cobb salad.
+
+
+  section.sit-center.padded.callout
+    .contained
+      .content
+        h3 It's a competitive sport to get free food at Barkley and we on the Moonshot team were losing
+
+
+  section.sit-center.padded.dings
+    .contained
+      .content
+        p Luckily, we make stuff in the lab. Introducing the Eddie-O-Matic: a free food notification machine which alerts us via Eddie’s trademark bell ding.
+        h4 Dean &amp; Deluca DING!, Pizza DING!, Jack Stack DING DING DING!
+
+
+  section.sit-center
+    .contained
+      .content
+        h3 How it Works
+        p I'm using a webhook provided by <a href='http://context.io/' target='_blank'>context.io</a> to constantly monitor my inbox for new messages from Eddie. When one arrives, a web application checks to see if the contents/subject of the e-mail look like food (donuts, beer, etc). If a match exists, the app will then notify a spark core of what's available and gives it's best guess as to what floor to get it.
+        p You can make one of your own by cloning the <a href='https://github.com/MoonshotLab/eddie-o-matic' target='_blank'>github repo</a>.
+
+block extras
+  style(type='text/css').
+    .callout.padded{
+      background: url('/public/posters/eddie.jpg') repeat;
+      background-size: 50%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .callout .content{
+      background-color: white;
+      padding: 10px 20px 15px;
+      text-align: center;
+    }
+    .callout h3{
+      margin-bottom: 0;
+    }
+    .intro{
+      background: url('/public/img/sprinkled-donut.jpg') no-repeat bottom center;
+      background-size: 350px;
+      padding-bottom: 175px;
+    }
+    .dings h4{
+      background-color: #444;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }

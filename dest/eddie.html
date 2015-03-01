@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Eddie-O-Matic</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Joe Longstreet">
+    <meta name="creator" content="Joe Longstreet">
+    <meta name="publisher" content="Joe Longstreet">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="keywords" content="spark core, free food">
+    <meta name="description" content="a free food notifier machine">
+    <link href="http://fonts.googleapis.com/css?family=Lora|Open+Sans+Condensed:700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="icon" href="public/favicon.ico">
+    <link rel="apple-touch-icon" href="public/apple-touch-icon.png">
+  </head>
+  <body>
+    <header class="primary">
+      <div class="contained">
+        <h1><a href="/">Joe Longstreet</a></h1>
+        <h2>An inventor / maker living in Kansas City, Missouri</h2>
+      </div>
+    </header>
+    <article class="primary">
+      <header class="contained">
+        <h1>Eddie-O-Matic</h1>
+        <h2>a free food notifier machine</h2>
+      </header>
+      <section class="sit-left intro">
+        <div class="contained">
+          <div class="content">
+            <p>There always seems to be free food floating around the office and our front desk person (Eddie) knows exactly where to find it. He’ll send out company wide e-mails telling everyone they can gorge themselves on whatever leftovers are available from the last client meeting - cupcakes, bbq pork ribs, maybe a cobb salad.</p>
+          </div>
+        </div>
+      </section>
+      <section class="sit-center padded callout">
+        <div class="contained">
+          <div class="content">
+            <h3>It's a competitive sport to get free food at Barkley and we on the Moonshot team were losing</h3>
+          </div>
+        </div>
+      </section>
+      <section class="sit-center padded dings">
+        <div class="contained">
+          <div class="content">
+            <p>Luckily, we make stuff in the lab. Introducing the Eddie-O-Matic: a free food notification machine which alerts us via Eddie’s trademark bell ding.</p>
+            <h4>Dean &amp; Deluca DING!, Pizza DING!, Jack Stack DING DING DING!</h4>
+          </div>
+        </div>
+      </section>
+      <section class="sit-center">
+        <div class="contained">
+          <div class="content">
+            <h3>How it Works</h3>
+            <p>I'm using a webhook provided by <a href='http://context.io/' target='_blank'>context.io</a> to constantly monitor my inbox for new messages from Eddie. When one arrives, a web application checks to see if the contents/subject of the e-mail look like food (donuts, beer, etc). If a match exists, the app will then notify a spark core of what's available and gives it's best guess as to what floor to get it.</p>
+            <p>You can make one of your own by cloning the <a href='https://github.com/MoonshotLab/eddie-o-matic' target='_blank'>github repo</a>.</p>
+          </div>
+        </div>
+      </section>
+    </article>
+    <footer class="primary">
+      <nav class="contained">
+        <ul>
+          <li><a href="https://github.com/joelongstreet/" target="_blank">on Github</a></li>
+          <li><a href="http://twitter.com/joelongstreet" target="_blank">on Twitter</a></li>
+          <li><a href="http://instagram.com/joelongstreet" target="_blank">on Instagram</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <style type="text/css">
+      .callout.padded{
+        background: url('/public/posters/eddie.jpg') repeat;
+        background-size: 50%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .callout .content{
+        background-color: white;
+        padding: 10px 20px 15px;
+        text-align: center;
+      }
+      .callout h3{
+        margin-bottom: 0;
+      }
+      .intro{
+        background: url('/public/img/sprinkled-donut.jpg') no-repeat bottom center;
+        background-size: 350px;
+        padding-bottom: 175px;
+      }
+      .dings h4{
+        background-color: #444;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-3920837-6', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
